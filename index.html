@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <title>Animation test</title>
+    <meta charset="utf-8">
+    <style>
+    body {
+    transition-duration: .2s;
+    animation: mymove 5s infinite;
+    background: green;
+}
+div {
+    font-size: 64px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: gamer 2s infinite;
+}
+
+@keyframes mymove {
+    33%   {background: red;}
+    66% {background: blue;}
+    100% {background: green;}
+  }
+@keyframes gamer {
+    
+  0%   {top: 0px; background: orange; color: black; width: 100px;}
+  50% {top: 200px; background: cyan; color: white; width: 300px;}
+  100%   {top: 0px; background: orange; color: black; width: 100px;}
+}
+  </style>
+    </head>
+    <body>
+        <div class="text">hi</div>
+    </body>
